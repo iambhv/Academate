@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Help</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="help-page">
+        <header>
+            <a href="index.html" class="company-name"><img class="logo" src="media\3D_icons_to_show_security__protection__encryption_and_privacy-removebg-preview.png" alt="Logo">AcadeMate.</a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="web-pages">
+                <a href="Learn.html" class="learn-main-nav-bar">Learn</a>
+                <a href="Help.html" class="help-main-nav-bar active-help">Help</a>
+                <a href="Contact Us.html" class="contact-us-main-nav-bar">Contact Us</a>
+                <a href="About Us.html" class="about-us-main-nav-bar">About Us</a>
+            </nav>
+        </header>
+
+            <div class="help-all-container">
+                <div class="help-heading-left-side-div">
+                    <h1>FAQ<b class="help-text-highlight">.</b></h1>
+                    <p>Answers to some questions you might have.</p>
+                    <img class="help-img" src="media\new-message-concept-illustration_114360-666-removebg-preview.png" alt="">
+                    <br><br><br><br>
+                    <h3 class="help-way-to-contact-us">Didn't get the answer to your question?</h3>
+                    <p><a href="Contact Us.html" class="help-left-side-div-link"><b class="help-cantact-page-link">CONTACT US</b></a> to report or indicate any bug, error, glitch or any query/question.</p>
+                </div>
+                <div class="help-questions-right-side-div">
+                    <details>
+                        <summary><b>How to go back to Home page from any other pages?</b></summary>
+                        <div>To go back to the Home page you can <b class="help-text-highlight">click on the company name or logo.</b></div>
+                    </details>
+                    <details>
+                        <summary><b>How can I ask questions or seek help while learning on this website?</b></summary>
+                        <div>You can contact us on any social media or send us your query from <b class="help-text-highlight">FORM available on contact us page</b> and interact with experts.</div>
+                    </details>
+                    <details>
+                        <summary><b>What programming languages are taught on this website?</b></summary>
+                        <div>We offer tutorials and resources covering a wide range of programming languages, including <b class="help-text-highlight">Python, JavaScript, Java, C++, and more</b>. You can go to LEARN page to see all the courses we provide.</div>
+                    </details>
+                    <details>
+                        <summary><b>From where should I start?</b></summary>
+                        <div>If you are <b class="help-text-highlight">interested in designing of website</b> then you can start from HTML and CSS then Javascript and if you are <b class="help-text-highlight">interested in how the databases works</b> then you should start with back-end programming like C, C++, Java etc.</div>
+                    </details>
+                    <details>
+                        <summary><b>Are the programming tutorials on this website free and Can I download the tutorials?</b></summary>
+                        <div><b class="help-text-highlight">Yes,</b> all tutorials and learning resources on our website are free to access.<br>Currently, our tutorials are <b class="help-text-highlight">only available online.</b></div>
+                    </details>
+                </div>
+            </div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AcadeMate. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('nav.web-pages');
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                navMenu.classList.toggle('open');
+            });
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('open');
+                    navMenu.classList.remove('open');
+                });
+            });
+        </script>
+    </body>
+</html>

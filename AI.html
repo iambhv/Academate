@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Coding</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="company-name"><img class="logo" src="media\3D_icons_to_show_security__protection__encryption_and_privacy-removebg-preview.png" alt="Logo">AcadeMate.</a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="web-pages">
+                <a href="Learn.html" class="learn-main-nav-bar active-learn">Learn</a>
+                <a href="Help.html" class="help-main-nav-bar">Help</a>
+                <a href="Contact Us.html" class="contact-us-main-nav-bar">Contact Us</a>
+                <a href="About Us.html" class="about-us-main-nav-bar">About Us</a>
+            </nav>
+        </header>
+            <nav class="learn-nav-bar">
+                <a href="Html.html" class="learn-nav-bar-a">HTML</a>
+                <a href="Css.html" class="learn-nav-bar-a">CSS</a>
+                <a href="Java Script.html" class="learn-nav-bar-a">JAVA SCRIPT</a>
+                <a href="SQL.html" class="learn-nav-bar-a">SQL</a>
+                <a href="Python.html" class="learn-nav-bar-a">PYTHON</a>
+                <a href="Java.html" class="learn-nav-bar-a">JAVA</a>
+                <a href="PHP.html" class="learn-nav-bar-a">PHP</a>
+                <a href="C.html" class="learn-nav-bar-a">C</a>
+                <a href="C++.html" class="learn-nav-bar-a">C++</a>
+                <a href="C has.html" class="learn-nav-bar-a">C#</a>
+                <a href="Ruby.html" class="learn-nav-bar-a">RUBY</a>
+                <a href="ReactJS.html" class="learn-nav-bar-a">REACT JS</a>
+                <a href="NodeJS.html" class="learn-nav-bar-a">NODE JS</a>
+                <a href="AI.html" class="learn-nav-bar-a active-language-links">AI</a>
+                <a href="CyberSecurity.html" class="learn-nav-bar-a">CYBERSECURITY</a>
+                <a href="Excel.html" class="learn-nav-bar-a">Excel</a>
+            </nav>
+
+            <div class="learn-introduction-div">
+                <div class="learn-introduction-div-slogan">
+                    <h1 class="learn-main-text">Learn,<br><span class="learn-gradient-text">AI.</span></h1>
+                </div>
+                <div class="learn-introduction-div-img">
+                    <img src="media\AI.png" alt="image" width="200px" height="200px">
+                </div>
+            </div>
+
+            <div class="learn-individual-pages">
+                <h2>Introduction to Artificial Intelligence</h2>
+                <p>AI is a branch of computer science that focuses on creating intelligent machines capable of performing tasks that typically require human intelligence.</p>
+                <h2>Key Concepts</h2>
+                <ul>
+                    <li>Machine learning</li><li>Neural networks</li>
+                    <li>Natural language processing (NLP)</li><li>Computer vision</li><li>Robotics</li>
+                </ul>
+                <h2>Applications</h2>
+                <ul>
+                    <li>Healthcare (diagnosis, drug discovery)</li><li>Finance (trading, fraud detection)</li>
+                    <li>E-commerce (recommendations)</li><li>Autonomous vehicles</li><li>Smart assistants</li>
+                </ul>
+                <h2>Benefits</h2>
+                <ul>
+                    <li>Automation</li><li>Personalization</li><li>Data-driven insights</li>
+                    <li>Enhanced capabilities</li><li>Improved safety</li>
+                </ul>
+                <h2>Challenges</h2>
+                <ul>
+                    <li>Ethical and societal implications</li><li>Data quality and bias</li>
+                    <li>Regulatory considerations</li><li>Robustness requirements</li><li>Human-AI collaboration</li>
+                </ul>
+                <div class="video-div">
+                    <h1 class="language-page-vid-h">Video Tutorial:</h1>
+                    <p><b>Learn at your own pace, Start watching our video tutorials by clicking your prefered language below</b></p>
+                    <div class="language-page-vid-button-group">
+                      <button onclick="playVideo(2)" class="language-page-vid-button">Hindi</button>
+                      <button onclick="playVideo(1)" class="language-page-vid-button">English</button>
+                    </div>
+                    <div class="video-container">
+                      <div id="video1" style="display: none;"><iframe width="1000" height="500" src="https://www.youtube.com/embed/5NgNicANyqM" frameborder="0" allowfullscreen></iframe></div>
+                      <div id="video2" style="display: none;"><iframe width="1000" height="500" src="https://www.youtube.com/embed/H-RKfV2ZJbI" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                  </div>
+                  <script>
+                  function playVideo(n) {
+                    document.getElementById('video1').style.display='none';
+                    document.getElementById('video2').style.display='none';
+                    document.getElementById('video'+n).style.display='block';
+                  }
+                  </script>
+                <h2>Further Learning</h2>
+                <ul>
+                    <li><a href="https://ai.google/education/">Google AI Education</a></li>
+                    <li><a href="https://www.coursera.org/specializations/deep-learning">Deep Learning Specialization on Coursera</a></li>
+                    <li><a href="https://www.edx.org/learn/artificial-intelligence">edX AI Courses</a></li>
+                    <li><a href="https://www.coursera.org/specializations/ai-for-everyone">AI For Everyone on Coursera</a></li>
+                </ul>
+            </div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AcadeMate. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('nav.web-pages');
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                navMenu.classList.toggle('open');
+            });
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('open');
+                    navMenu.classList.remove('open');
+                });
+            });
+        </script>
+    </body>
+</html>

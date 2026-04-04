@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Coding</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="company-name"><img class="logo" src="media\3D_icons_to_show_security__protection__encryption_and_privacy-removebg-preview.png" alt="Logo">AcadeMate.</a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="web-pages">
+                <a href="Learn.html" class="learn-main-nav-bar active-learn">Learn</a>
+                <a href="Help.html" class="help-main-nav-bar">Help</a>
+                <a href="Contact Us.html" class="contact-us-main-nav-bar">Contact Us</a>
+                <a href="About Us.html" class="about-us-main-nav-bar">About Us</a>
+            </nav>
+        </header>
+            <nav class="learn-nav-bar">
+                <a href="Html.html" class="learn-nav-bar-a">HTML</a>
+                <a href="Css.html" class="learn-nav-bar-a">CSS</a>
+                <a href="Java Script.html" class="learn-nav-bar-a">JAVA SCRIPT</a>
+                <a href="SQL.html" class="learn-nav-bar-a">SQL</a>
+                <a href="Python.html" class="learn-nav-bar-a">PYTHON</a>
+                <a href="Java.html" class="learn-nav-bar-a">JAVA</a>
+                <a href="PHP.html" class="learn-nav-bar-a">PHP</a>
+                <a href="C.html" class="learn-nav-bar-a">C</a>
+                <a href="C++.html" class="learn-nav-bar-a">C++</a>
+                <a href="C has.html" class="learn-nav-bar-a">C#</a>
+                <a href="Ruby.html" class="learn-nav-bar-a">RUBY</a>
+                <a href="ReactJS.html" class="learn-nav-bar-a">REACT JS</a>
+                <a href="NodeJS.html" class="learn-nav-bar-a">NODE JS</a>
+                <a href="AI.html" class="learn-nav-bar-a">AI</a>
+                <a href="CyberSecurity.html" class="learn-nav-bar-a active-language-links">CYBERSECURITY</a>
+                <a href="Excel.html" class="learn-nav-bar-a">Excel</a>
+            </nav>
+
+            <div class="learn-introduction-div">
+                <div class="learn-introduction-div-slogan">
+                    <h1 class="learn-main-text">Learn,<br><span class="learn-gradient-text">CyberSecurity.</span></h1>
+                </div>
+                <div class="learn-introduction-div-img">
+                    <img src="media\Cybersecurity_Illustration-removebg-preview.png" alt="image" width="250px" height="250px">
+                </div>
+            </div>
+
+            <div class="learn-individual-pages">
+                <h2>Introduction to Cybersecurity</h2>
+                <p>Cybersecurity refers to the practice of protecting computer systems, networks, and data from digital attacks, unauthorized access, and data breaches.</p>
+                <h2>Key Concepts</h2>
+                <ul>
+                    <li>Confidentiality</li><li>Integrity</li><li>Availability</li>
+                    <li>Authentication</li><li>Authorization</li><li>Encryption</li>
+                    <li>Vulnerability management</li><li>Incident response</li>
+                </ul>
+                <h2>Types of Threats</h2>
+                <ul>
+                    <li>Malware (viruses, ransomware)</li><li>Phishing</li>
+                    <li>Denial-of-Service (DoS) attacks</li><li>Man-in-the-Middle attacks</li>
+                    <li>Insider threats</li><li>Zero-day exploits</li>
+                </ul>
+                <h2>Importance</h2>
+                <ul>
+                    <li>Protecting sensitive information</li><li>Preventing financial losses</li>
+                    <li>Preserving reputation and trust</li><li>Ensuring business continuity</li><li>Fostering innovation</li>
+                </ul>
+                <h2>Best Practices</h2>
+                <ul>
+                    <li>Strong access controls and MFA</li><li>Regular software patching</li>
+                    <li>Encryption of sensitive data</li><li>Security assessments and penetration testing</li>
+                    <li>Employee cybersecurity training</li><li>Incident response planning</li>
+                </ul>
+                <div class="video-div">
+                    <h1 class="language-page-vid-h">Video Tutorial:</h1>
+                    <p><b>Learn at your own pace, Start watching our video tutorials by clicking your prefered language below</b></p>
+                    <div class="language-page-vid-button-group">
+                      <button onclick="playVideo(2)" class="language-page-vid-button">Hindi</button>
+                      <button onclick="playVideo(1)" class="language-page-vid-button">English</button>
+                    </div>
+                    <div class="video-container">
+                      <div id="video1" style="display: none;"><iframe width="1000" height="500" src="https://www.youtube.com/embed/s19BxFpoSd0" frameborder="0" allowfullscreen></iframe></div>
+                      <div id="video2" style="display: none;"><iframe width="1000" height="500" src="https://www.youtube.com/embed/vK4Mno4QYqk" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                  </div>
+                  <script>
+                  function playVideo(n) {
+                    document.getElementById('video1').style.display='none';
+                    document.getElementById('video2').style.display='none';
+                    document.getElementById('video'+n).style.display='block';
+                  }
+                  </script>
+                <h2>Further Learning</h2>
+                <ul>
+                    <li><a href="https://www.coursera.org/specializations/cybersecurity">Coursera Cybersecurity Specialization</a></li>
+                    <li><a href="https://www.udemy.com/topic/cyber-security/">Udemy Cybersecurity Courses</a></li>
+                    <li><a href="https://www.edx.org/learn/cybersecurity">edX Cybersecurity Courses</a></li>
+                </ul>
+            </div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AcadeMate. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('nav.web-pages');
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                navMenu.classList.toggle('open');
+            });
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('open');
+                    navMenu.classList.remove('open');
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Coding</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="company-name"><img class="logo" src="media\3D_icons_to_show_security__protection__encryption_and_privacy-removebg-preview.png" alt="Logo">AcadeMate.</a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="web-pages">
+                <a href="Learn.html" class="learn-main-nav-bar active-learn">Learn</a>
+                <a href="Help.html" class="help-main-nav-bar">Help</a>
+                <a href="Contact Us.html" class="contact-us-main-nav-bar">Contact Us</a>
+                <a href="About Us.html" class="about-us-main-nav-bar">About Us</a>
+            </nav>
+        </header>
+            <nav class="learn-nav-bar">
+                <a href="Html.html" class="learn-nav-bar-a">HTML</a>
+                <a href="Css.html" class="learn-nav-bar-a">CSS</a>
+                <a href="Java Script.html" class="learn-nav-bar-a">JAVA SCRIPT</a>
+                <a href="SQL.html" class="learn-nav-bar-a">SQL</a>
+                <a href="Python.html" class="learn-nav-bar-a">PYTHON</a>
+                <a href="Java.html" class="learn-nav-bar-a">JAVA</a>
+                <a href="PHP.html" class="learn-nav-bar-a active-language-links">PHP</a>
+                <a href="C.html" class="learn-nav-bar-a">C</a>
+                <a href="C++.html" class="learn-nav-bar-a">C++</a>
+                <a href="C has.html" class="learn-nav-bar-a">C#</a>
+                <a href="Ruby.html" class="learn-nav-bar-a">RUBY</a>
+                <a href="ReactJS.html" class="learn-nav-bar-a">REACT JS</a>
+                <a href="NodeJS.html" class="learn-nav-bar-a">NODE JS</a>
+                <a href="AI.html" class="learn-nav-bar-a">AI</a>
+                <a href="CyberSecurity.html" class="learn-nav-bar-a">CYBERSECURITY</a>
+                <a href="Excel.html" class="learn-nav-bar-a">Excel</a>
+            </nav>
+
+            <div class="learn-introduction-div">
+                <div class="learn-introduction-div-slogan">
+                    <h1 class="learn-main-text">Learn,<br><span class="learn-gradient-text">PHP.</span></h1>
+                </div>
+                <div class="learn-introduction-div-img">
+                    <img src="media\Know_How_Language_Evolution_Affect_Process_of_Translation-removebg-preview.png" alt="image" width="350px" height="200px">
+                </div>
+            </div>
+
+            <div class="learn-individual-pages">
+                <h2>Introduction to PHP</h2>
+                <p>PHP (Hypertext Preprocessor) is a popular server-side scripting language primarily used for web development.</p>
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Easy to learn</li><li>Dynamic web content</li><li>Server-side scripting</li>
+                    <li>Wide platform support</li><li>Rich ecosystem (Laravel, Symfony)</li>
+                </ul>
+                <h2>Applications</h2>
+                <ul>
+                    <li>Dynamic websites (WordPress, Magento)</li><li>Web applications</li>
+                    <li>Web services / REST APIs</li><li>Command-line scripting</li><li>Enterprise applications</li>
+                </ul>
+                <h2>Benefits</h2>
+                <ul>
+                    <li>Open-source</li><li>Community support</li><li>Interoperability</li>
+                    <li>Scalability</li><li>Built-in security features</li>
+                </ul>
+                <h2>Drawbacks</h2>
+                <ul>
+                    <li>Performance variability</li><li>Language inconsistencies</li>
+                    <li>Scalability challenges</li><li>Security concerns if not properly maintained</li>
+                </ul>
+                <div class="video-div">
+                    <h1 class="language-page-vid-h">Video Tutorial:</h1>
+                    <p><b>Learn at your own pace, Start watching our video tutorials by clicking your prefered language below</b></p>
+                    <div class="language-page-vid-button-group">
+                      <button onclick="playVideo(2)" class="language-page-vid-button">Hindi</button>
+                      <button onclick="playVideo(1)" class="language-page-vid-button">English</button>
+                    </div>
+                    <div class="video-container">
+                      <div id="video1" style="display: none;"><iframe width="1000" height="500" src="https://www.youtube.com/embed/OK_JCtrrv-c" frameborder="0" allowfullscreen></iframe></div>
+                      <div id="video2" style="display: none;"><iframe width="1000" height="500" src="https://www.youtube.com/embed/1SnPKhCdlsU" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                  </div>
+                  <script>
+                  function playVideo(n) {
+                    document.getElementById('video1').style.display='none';
+                    document.getElementById('video2').style.display='none';
+                    document.getElementById('video'+n).style.display='block';
+                  }
+                  </script>
+                <h2>Further Learning</h2>
+                <ul>
+                    <li><a href="https://www.php.net/manual/en/index.php">Official PHP Documentation</a></li>
+                    <li><a href="https://www.w3schools.com/php/">W3Schools PHP Tutorial</a></li>
+                    <li><a href="https://laracasts.com/">Laracasts</a></li>
+                    <li><a href="https://www.udemy.com/courses/search/?q=php">Udemy PHP Courses</a></li>
+                </ul>
+            </div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AcadeMate. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('nav.web-pages');
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                navMenu.classList.toggle('open');
+            });
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('open');
+                    navMenu.classList.remove('open');
+                });
+            });
+        </script>
+    </body>
+</html>

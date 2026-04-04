@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="company-name"><img class="logo" src="media\3D_icons_to_show_security__protection__encryption_and_privacy-removebg-preview.png" alt="Logo">AcadeMate.</a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="web-pages">
+                <a href="Learn.html" class="learn-main-nav-bar">Learn</a>
+                <a href="Help.html" class="help-main-nav-bar">Help</a>
+                <a href="Contact Us.html" class="contact-us-main-nav-bar">Contact Us</a>
+                <a href="About Us.html" class="about-us-main-nav-bar active-about-us">About Us</a>
+            </nav>
+        </header>
+
+            <div class="about-us-all-div-container">
+                <div class="about-us-div-row">
+                    <div class="about-us-div-heading">
+                        <h1>All you need to know <br> <b class="about-us-text-highlight">About us.</b></h1>
+                    </div>
+                </div>
+                <div class="about-us-div-row">
+                    <div class="about-us-div-row-col"><h2>Free Tutorials</h2><p>Enjoy our free tutorials like millions of others.</p></div>
+                    <div class="about-us-div-row-col"><h2>Passionate Educators</h2><p>Our team comprises passionate educators dedicated to fostering a love for programming and empowering learners to excel in the digital world.</p></div>
+                    <div class="about-us-div-row-col"><h2>Create Website</h2><p>You can Create your own fully working website with us.</p></div>
+                </div>
+                <div class="about-us-div-row">
+                    <div class="about-us-div-row-col"><h2>Expertise in Programming Education</h2><p>With years of experience in the field, we bring expertise in crafting engaging and effective programming curriculum tailored to learners of all levels.</p></div>
+                    <div class="about-us-div-row-col"><h2>24/7 Guidance</h2><p>You can contact us anytime for any type of help, our experts will be there for you.</p></div>
+                    <div class="about-us-div-row-col"><h2>Commitment to Student Success</h2><p>We are committed to the success of our students, providing personalized support, guidance, and resources to help them achieve their learning goals.</p></div>
+                </div>
+                <div class="about-us-div-row">
+                    <div class="about-us-div-row-col about-us-div-row-col-big"><h2>Developer:</h2><p>Bhavyansh Parmar</p></div>
+                </div>
+            </div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AcadeMate. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('nav.web-pages');
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                navMenu.classList.toggle('open');
+            });
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('open');
+                    navMenu.classList.remove('open');
+                });
+            });
+        </script>
+    </body>
+</html>

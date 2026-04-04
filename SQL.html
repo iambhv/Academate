@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Coding</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="company-name"><img class="logo" src="media\3D_icons_to_show_security__protection__encryption_and_privacy-removebg-preview.png" alt="Logo">AcadeMate.</a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="web-pages">
+                <a href="Learn.html" class="learn-main-nav-bar active-learn">Learn</a>
+                <a href="Help.html" class="help-main-nav-bar">Help</a>
+                <a href="Contact Us.html" class="contact-us-main-nav-bar">Contact Us</a>
+                <a href="About Us.html" class="about-us-main-nav-bar">About Us</a>
+            </nav>
+        </header>
+            <nav class="learn-nav-bar">
+                <a href="Html.html" class="learn-nav-bar-a">HTML</a>
+                <a href="Css.html" class="learn-nav-bar-a">CSS</a>
+                <a href="Java Script.html" class="learn-nav-bar-a">JAVA SCRIPT</a>
+                <a href="SQL.html" class="learn-nav-bar-a active-language-links">SQL</a>
+                <a href="Python.html" class="learn-nav-bar-a">PYTHON</a>
+                <a href="Java.html" class="learn-nav-bar-a">JAVA</a>
+                <a href="PHP.html" class="learn-nav-bar-a">PHP</a>
+                <a href="C.html" class="learn-nav-bar-a">C</a>
+                <a href="C++.html" class="learn-nav-bar-a">C++</a>
+                <a href="C has.html" class="learn-nav-bar-a">C#</a>
+                <a href="Ruby.html" class="learn-nav-bar-a">RUBY</a>
+                <a href="ReactJS.html" class="learn-nav-bar-a">REACT JS</a>
+                <a href="NodeJS.html" class="learn-nav-bar-a">NODE JS</a>
+                <a href="AI.html" class="learn-nav-bar-a">AI</a>
+                <a href="CyberSecurity.html" class="learn-nav-bar-a">CYBERSECURITY</a>
+                <a href="Excel.html" class="learn-nav-bar-a">Excel</a>
+            </nav>
+
+            <div class="learn-introduction-div">
+                <div class="learn-introduction-div-slogan">
+                    <h1 class="learn-main-text">Learn,<br><span class="learn-gradient-text">SQL.</span></h1>
+                </div>
+                <div class="learn-introduction-div-img">
+                    <img src="media\Free_Vector___Hand_drawn_flat_design_sql_illustration-removebg-preview.png" alt="image" width="350px" height="250px">
+                </div>
+            </div>
+
+            <div class="learn-individual-pages">
+                <h2>Introduction to SQL</h2>
+                <p>SQL (Structured Query Language) is a domain-specific language used for managing and querying data in relational database management systems.</p>
+                <h2>Key Concepts</h2>
+                <ul>
+                    <li>Database creation and management</li><li>Data definition language (DDL)</li>
+                    <li>Data manipulation language (DML)</li><li>Data control language (DCL)</li>
+                    <li>Transaction control</li><li>Joins, subqueries, and aggregations</li>
+                </ul>
+                <h2>Applications</h2>
+                <ul>
+                    <li>Web development</li><li>Business intelligence</li><li>ERP systems</li>
+                    <li>Data warehousing</li><li>Mobile applications</li>
+                </ul>
+                <h2>Benefits</h2>
+                <ul>
+                    <li>Standardization</li><li>Expressiveness</li><li>Scalability</li>
+                    <li>Data integrity</li><li>Security</li>
+                </ul>
+                <div class="video-div">
+                    <h1 class="language-page-vid-h">Video Tutorial:</h1>
+                    <p><b>Learn at your own pace, Start watching our video tutorials by clicking your prefered language below</b></p>
+                    <div class="language-page-vid-button-group">
+                      <button onclick="playVideo(2)" class="language-page-vid-button">Hindi</button>
+                      <button onclick="playVideo(1)" class="language-page-vid-button">English</button>
+                    </div>
+                    <div class="video-container">
+                      <div id="video1" style="display: none;"><iframe width="1000" height="500" src="https://www.youtube.com/embed/wmiDdBG-yP4" frameborder="0" allowfullscreen></iframe></div>
+                      <div id="video2" style="display: none;"><iframe width="1000" height="500" src="https://www.youtube.com/embed/9_WZPp8e1DU" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                  </div>
+                  <script>
+                  function playVideo(n) {
+                    document.getElementById('video1').style.display='none';
+                    document.getElementById('video2').style.display='none';
+                    document.getElementById('video'+n).style.display='block';
+                  }
+                  </script>
+                <h2>Further Learning</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com/sql/">W3Schools SQL Tutorial</a></li>
+                    <li><a href="https://www.udemy.com/topic/sql/">Udemy SQL Courses</a></li>
+                    <li><a href="https://www.codecademy.com/learn/learn-sql">Codecademy SQL Course</a></li>
+                    <li><a href="https://docs.microsoft.com/en-us/sql/">Microsoft SQL Documentation</a></li>
+                </ul>
+            </div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AcadeMate. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('nav.web-pages');
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                navMenu.classList.toggle('open');
+            });
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('open');
+                    navMenu.classList.remove('open');
+                });
+            });
+        </script>
+    </body>
+</html>

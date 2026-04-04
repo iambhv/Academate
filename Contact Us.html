@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    </head>
+    <body class="cub">
+        <header>
+            <a href="index.html" class="company-name"><img class="logo" src="media\3D_icons_to_show_security__protection__encryption_and_privacy-removebg-preview.png" alt="Logo">AcadeMate.</a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="web-pages">
+                <a href="Learn.html" class="learn-main-nav-bar">Learn</a>
+                <a href="Help.html" class="help-main-nav-bar">Help</a>
+                <a href="Contact Us.html" class="contact-us-main-nav-bar active-contact-us">Contact Us</a>
+                <a href="About Us.html" class="about-us-main-nav-bar">About Us</a>
+            </nav>
+        </header>
+
+        <div class="contact-us-all-divs">
+           <div class="contact-us-icons">
+                <nav>
+                    <a href="https://www.instagram.com/"><i class="ri-instagram-line"></i></a>
+                    <a href="https://twitter.com/"><i class="ri-twitter-x-line"></i></a>
+                    <a href="https://www.youtube.com/"><i class="ri-youtube-line"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="ri-linkedin-fill"></i></a>
+                    <a href="https://www.facebook.com/"><i class="ri-facebook-fill"></i></a>
+                </nav>
+            </div>
+            <div class="contact-us-form-left-side-div">
+                <h1>Hi, would you like to <b class="contact-us-highlight-text">talk?</b></h1>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-us-form">
+                    <div class="contact-us-form-input-box">
+                        <input type="hidden" name="access_key" value="4c3a59ba-4e82-45c1-bef8-95ab92eb1fb0">
+                        <input type="text" class="contact-us-input-value" name="name" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="contact-us-form-input-box">
+                        <input type="email" class="contact-us-input-value" name="email" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="contact-us-form-input-box">
+                        <input type="tel" class="contact-us-input-value" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Enter your Phone" required>
+                    </div>
+                    <div class="contact-us-form-input-box">
+                        <textarea name="message" id="message" cols="30" rows="5" class="contact-us-input-value" placeholder="Enter Query/Question/Report" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit<i class="ri-arrow-right-line"></i></button>
+                </form>
+            </div>
+            <div class="contact-us-img-right-side-div">
+                <img src="media\Messages-bro.png" alt="">
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AcadeMate. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('nav.web-pages');
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                navMenu.classList.toggle('open');
+            });
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('open');
+                    navMenu.classList.remove('open');
+                });
+            });
+        </script>
+    </body>
+</html>

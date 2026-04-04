@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AcadeMate - Learn To Code</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <a href="index.html" class="company-name"><img class="logo" src="media\3D_icons_to_show_security__protection__encryption_and_privacy-removebg-preview.png" alt="Logo">AcadeMate.</a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="web-pages">
+                <a href="Learn.html" class="learn-main-nav-bar">Learn</a>
+                <a href="Help.html" class="help-main-nav-bar">Help</a>
+                <a href="Contact Us.html" class="contact-us-main-nav-bar">Contact Us</a>
+                <a href="About Us.html" class="about-us-main-nav-bar">About Us</a>
+            </nav>
+        </header>
+
+        <div class="home-main-div">
+            <h1 class="home-colorful-text">AcadeMate.</h1>
+            <p>Learn. Code. Succeed.</p>
+        </div>
+
+        <div class="home-all-div-container">
+            <div class="home-div-second-text"><h2>Learn To Code</h2></div>
+            <div class="box"><a href="Html.html" class="home-links"><img src="media\html.png" alt="HTML Image"><h3>HTML</h3><p>Hypertext Markup Language is the backbone of web development, providing the structure and content of web pages through markup tags.</p></a></div>
+            <div class="box"><a href="Css.html" class="home-links"><img src="media\css.png" alt="CSS Image"><h3>CSS</h3><p>Cascading Style Sheet is used to enhance the presentation of HTML elements, enabling the design and layout of web pages with styles, colors, and layouts.</p></a></div>
+            <div class="box"><a href="Java Script.html" class="home-links"><img src="media\js.png" alt="JavaScript Image"><h3>JavaScript</h3><p>JavaScript is a versatile scripting language that adds interactivity and dynamic behavior to web pages, enabling features like animations, form validation, and dynamic content updates</p></a></div>
+            <div class="box"><a href="SQL.html" class="home-links"><img src="media\Data_setting_icon-removebg-preview.png" alt="SQL Image"><h3>SQL</h3><p>Structured Query Language is essential for managing and querying relational databases, allowing for efficient storage, retrieval, and manipulation of data.</p></a></div>
+            <div class="box"><a href="Python.html" class="home-links"><img src="media\python_logo.png" alt="Python Image"><h3>Python</h3><p>Python is a powerful, high-level programming language known for its simplicity and readability, used for web development, data analysis, machine learning, and automation tasks.</p></a></div>
+            <div class="box"><a href="Java.html" class="home-links"><img src="media\java.png" alt="Java Image"><h3>Java</h3><p>Java is a versatile, object-oriented programming language renowned for its portability and robustness, commonly used for building enterprise-level applications, Android mobile apps, and web services.</p></a></div>
+            <div class="box"><a href="PHP.html" class="home-links"><img src="media\php.png" alt="PHP Image"><h3>PHP</h3><p>PHP (Hypertext Preprocessor) is a server-side scripting language designed for web development, enabling dynamic content generation, form handling, and database interaction.</p></a></div>
+            <div class="box"><a href="C.html" class="home-links"><img src="media\c.png" alt="C Image"><h3>C</h3><p>C is a foundational programming language known for its efficiency and versatility, used in system programming, embedded systems, and performance-critical applications.</p></a></div>
+            <div class="box"><a href="C++.html" class="home-links"><img src="media\c++.png" alt="CPP Image"><h3>C++</h3><p>C++ is an extension of the C programming language with additional features, enabling object-oriented programming, system development, and game development.</p></a></div>
+            <div class="box"><a href="C has.html" class="home-links"><img src="media\C__programming_language_by_code_t-shirt___Redbubble-removebg-preview.png" alt="C# Image"><h3>C#</h3><p>C# (C-Sharp) is a modern, object-oriented programming language developed by Microsoft, commonly used for building Windows applications, web services, and games.</p></a></div>
+            <div class="box"><a href="Ruby.html" class="home-links"><img src="media\Ruby_programming_language_icon-removebg-preview.png" alt="Ruby Image"><h3>Ruby</h3><p>Ruby is a dynamic, object-oriented programming language known for its simplicity and productivity, often used for web development, automation, and scripting.</p></a></div>
+            <div class="box"><a href="ReactJS.html" class="home-links"><img src="media\react.png" alt="React.js Image"><h3>React.js</h3><p>React.js is a popular JavaScript library for building user interfaces, known for its component-based architecture and efficient rendering, commonly used in single-page applications.</p></a></div>
+            <div class="box"><a href="NodeJS.html" class="home-links"><img src="media\node.png" alt="Node.js Image"><h3>Node.js</h3><p>Node.js is a runtime environment that allows JavaScript to be executed server-side, enabling scalable and efficient backend development using JavaScript.</p></a></div>
+            <div class="box"><a href="AI.html" class="home-links"><img src="media\AI.png" alt="AI Image"><h3>AI</h3><p>Artificial Intelligence (AI) encompasses technologies and algorithms that enable computers to perform tasks that typically require human intelligence, such as machine learning, natural language processing, and computer vision.</p></a></div>
+            <div class="box"><a href="CyberSecurity.html" class="home-links"><img src="media\Global_network_security_glyph_icon-removebg-preview.png" alt="CyberSecurity Image"><h3>CyberSecurity</h3><p>Cybersecurity involves protecting computer systems, networks, and data from unauthorized access, cyberattacks, and data breaches, employing techniques such as encryption, firewalls, and intrusion detection systems.</p></a></div>
+        </div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AcadeMate. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('nav.web-pages');
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                navMenu.classList.toggle('open');
+            });
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('open');
+                    navMenu.classList.remove('open');
+                });
+            });
+        </script>
+    </body>
+</html>
