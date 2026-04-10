@@ -300,6 +300,9 @@ div.contact-us-form-left-side-div button.submit-button {
   background: transparent; border: 3px solid green; border-radius: 20px;
   font-size: 20px; padding: 5px 20px 5px 10px; cursor: pointer;
 }
+form.contact-us-form {
+  color: #000;
+}
 div.contact-us-img-right-side-div { margin-right: 50px; }
 div.contact-us-img-right-side-div img { height: 500px; width: 500px; max-width: 100%; }
 
